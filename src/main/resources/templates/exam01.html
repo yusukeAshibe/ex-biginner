@@ -5,10 +5,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form th:action = "@{/exam01}"></form>
+<form th:action = "@{/exam01/receive}" method="post">
+
 <label for ="namefield">名前；</label> 
-<input type = "text" name= "name" id= "namefield">
+<input type = "text" name= "name" id= "namefield"><br>
 
 <button>送信</button>
+
+</form>
 </body>
 </html>
