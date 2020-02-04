@@ -1,8 +1,5 @@
 package com.example.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.servlet.ServletContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +21,9 @@ public class Exam03Controller {
 	@RequestMapping("/total")
 	public String total(Integer item1, Integer item2, Integer item3) {
 
-		Integer total= item1+item2+item3;
-		
-		application.setAttribute("taxIncluded", total*1.1);
+		Integer total = item1 + item2 + item3;
+
+		application.setAttribute("taxIncluded", total * 1.1);
 
 		application.setAttribute("withoutTax", total);
 

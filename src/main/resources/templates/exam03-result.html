@@ -11,10 +11,10 @@
 <br>
 
 ■税抜き価格<br>
-<span th:text="${application.withoutTax}"></span>円<br>
+<span th:text="${#numbers.formatInteger(application.withoutTax,1,'COMMA')}"></span>円<br>
 
 ■税抜き価格<br>
-<span th:text="${application.taxIncluded}"></span>円<br>
+<span th:text="${#numbers.formatInteger(application.taxIncluded,1,'COMMA')}"></span>円<br>
 
 </body>
 </html>
