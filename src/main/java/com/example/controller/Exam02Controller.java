@@ -26,5 +26,9 @@ public class Exam02Controller {
 		
 		return "exam02";
 	}
+	@RequestMapping("/next")
+	public String next() {
+		return "exam02-result2";
+	}
 
 }
