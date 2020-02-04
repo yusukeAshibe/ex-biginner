@@ -5,15 +5,19 @@
 <title>Insert title here</title>
 </head>
 <body>
+
 <form th:action ="@{exam03/receive}" method ="post">
 
-商品1<input type="text" name= "item1">
-商品２<input type="text" name= "item2">
-商品３<input type="text" name= "item3">
+<label for="item1">商品1</label>
+<input type="text" name= "item1" id = "item1">
+
+<label for="item2">商品2</label>
+<input type="text" name= "item2" id= "item2" >
+
+<label for="item3">商品3</label>
+<input type="text" name= "item3" id= "item3">
 
 <button>購入</button>
-
-
 
 </form>
 
