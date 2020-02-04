@@ -6,7 +6,15 @@
 </head>
 <body>
 
-<span></span>
+<h1>合計金額</h1>
+<br>
+<br>
+
+■税抜き価格<br>
+<span th:text="${application.withoutTax}"></span>円<br>
+
+■税抜き価格<br>
+<span th:text="${application.taxIncluded}"></span>円<br>
 
 </body>
 </html>

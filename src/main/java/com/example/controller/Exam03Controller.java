@@ -21,14 +21,14 @@ public class Exam03Controller {
 		return "exam03";
 	}
 
-	@RequestMapping("/sumMoney")
-	public String sumMoney(Integer item1, Integer item2, Integer item3) {
+	@RequestMapping("/total")
+	public String total(Integer item1, Integer item2, Integer item3) {
 
-		Integer sum= item1+item2+item3;
+		Integer total= item1+item2+item3;
 		
-		application.setAttribute("taxIncluded", sum*1.1);
+		application.setAttribute("taxIncluded", total*1.1);
 
-		application.setAttribute("withoutTax", sum);
+		application.setAttribute("withoutTax", total);
 
 		return "exam03-result";
 	}
