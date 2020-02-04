@@ -23,9 +23,10 @@ public class Exam02Controller {
 		session.setAttribute("num1", num1);
 		session.setAttribute("num2", num2);
 		session.setAttribute("sum", num1 + num2);
-		
+
 		return "exam02-result";
 	}
+
 	@RequestMapping("/next")
 	public String next() {
 		return "exam02-result2";
